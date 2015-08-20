@@ -41,6 +41,12 @@ function bmd_comment_class( $classes ) {
         $classes[] = 'super-max';
 
         }
+        
+    if ( ( $comment_depth % $breakpoint == 0) ){
+        
+        $classes[] = 'breakpoint';
+        
+    } 
 	
         return $classes;
 }
