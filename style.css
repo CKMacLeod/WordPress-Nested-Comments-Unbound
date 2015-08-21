@@ -1,18 +1,18 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Basic Style for WP Nested Comments Unbound
 */
 /* 
-    Created on : Aug 18, 2015, 3:57:25 PM
+    Updated on : Aug 21, 2015, 2:53 PM
     Author     : CK MacLeod
 */
 
-/*handles basic case - producing single column of comments at breakpoint */
 
-.super-max ol.children li, super-max ul.children li  {
+/*handles 2015 case (ol) and generic "ul" case - producing single column of comments at breakpoint */
+
+.breakpoint ol.children li, .comments-area .breakpoint ul.children  {
     
     padding-left: 0;
+
 }
 
 
