@@ -2,17 +2,100 @@
 Basic Style for WP Nested Comments Unbound
 */
 /* 
-    Updated on : Aug 21, 2015, 2:53 PM
+    Updated on : Aug 25, 2015
     Author     : CK MacLeod
 */
 
+/*will handle 2015 (ol) and basic (ul) cases, but may have to be adapted per theme */
 
-/*handles 2015 case (ol) and generic "ul" case - producing single column of comments at breakpoint */
-
-.breakpoint ol.children li, .comments-area .breakpoint ul.children  {
+.breakpoint ol.children li, 
+.comments-area .breakpoint ul.children {
     
-    padding-left: 0;
+    padding-left: 0px;
 
 }
 
+/*STYLES FOR SNAKING VERSION */
 
+/*
+.comment-list .breakpoint article {
+
+	background-color: #fff;
+	position: relative;
+}
+
+.breakpoint .comment-respond {
+	width: 435px;
+	background-color #fff;
+}
+
+
+.comments-area li.leftturn {
+	margin-left: -28px;
+}
+
+.comments-area .leftturn > article {
+	border: 2px solid #EFE1E1;
+	width: 435px;
+
+}
+
+.leftturn > article:before {
+	content: '\2190';
+	font-size: 75%;
+	float: left;
+	padding: 0 6px;
+	color: gray;
+	background-color: #EFE1E1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+}
+
+.leftturn > article:hover:before {
+	content: '\2190	Max-Depth/Nesting to Left';
+}
+
+.rightturn {
+	margin-left: 28px;
+}
+
+.comments-area .rightturn > article {
+	border: 2px solid #B6DAED;
+	width: 435px;
+
+}
+
+.rightturn > article:before {
+	content: '\2192';
+	font-size: 75%;
+	float: right;
+        text-align: right;
+	padding: 0 6px;
+	color: gray;
+	background-color: #B6DAED;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.rightturn > article:hover:before {
+	content: 'Max-Depth/Nesting to Right \2192';
+}
+
+@media only screen and (max-width: 640px) {
+	.comments-area li.leftturn {
+		margin-left: -4px;
+	}
+
+	.rightturn {
+		margin-left: 4px;
+	}	
+
+	.breakpoint .comment-respond, .comments-area .rightturn > article, .comments-area .leftturn > article {
+		max-width: 100%;
+	}
+
+}
+*/
